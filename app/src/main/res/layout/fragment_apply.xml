@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="执行人"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/zxr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:spinnerMode="dropdown"
+            android:text="梁志乾" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:clickable="false"
+            android:text="客户名称"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/khmc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:hint="请搜索客户添加"
+            android:textSize="12.0sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:clickable="false"
+            android:text="客户编号"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/khbh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:hint="客户编号"
+            android:textSize="12.0sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:clickable="false"
+            android:text="客户地址"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/khdz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:hint="客户地址"
+            android:textSize="12.0sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:clickable="false"
+            android:text="联系人"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/lxr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:hint="联系人"
+            android:textSize="12.0sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:clickable="false"
+            android:text="联系人电话"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/lxrdh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:hint="联系人电话"
+            android:textSize="12.0sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:clickable="false"
+            android:text="产品"
+            android:textSize="12.0sp" />
+
+        <Spinner
+            android:id="@+id/gscp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill"
+            android:layout_marginEnd="5dp"
+            android:background="@null"
+            android:gravity="end"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:clickable="false"
+            android:text="产品数量"
+            android:textSize="12.0sp" />
+
+        <Spinner
+            android:id="@+id/cpsl"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill"
+            android:layout_marginEnd="5dp"
+            android:background="@null"
+            android:gravity="center" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:clickable="false"
+            android:text="标准工时"
+            android:textSize="12.0sp" />
+
+        <Spinner
+            android:id="@+id/bzgs"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill"
+            android:layout_marginEnd="5dp"
+            android:background="@null"
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+            android:clickable="false"
+            android:text="服务内容" />
+
+        <EditText
+            android:id="@+id/fwnr"
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+            android:layout_gravity="fill"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:hint="请输入服务内容"
+            android:inputType="textMultiLine"
+            android:textSize="12.0sp"
+            tools:ignore="Autofill" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:clickable="false"
+            android:text="出发时间"
+            android:textSize="12.0sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_time"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_selected_time"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:textColor="@color/selected_time_text"
+                android:textSize="15.0sp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:clickable="false"
+            android:text="到达时间"
+            android:textSize="12.0sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_time1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_selected_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:textColor="@color/selected_time_text"
+                android:textSize="15.0sp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:clickable="false"
+            android:text="完成时间"
+            android:textSize="12.0sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_time2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_selected_time2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:textColor="@color/selected_time_text"
+                android:textSize="15.0sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/post_gd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:text="提交工单申请"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/flush"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:text="接收客户信息"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:text="重置输入"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/exit0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:text="退出程序"
+            android:textStyle="bold" />
+    </GridLayout>
+</ScrollView>
