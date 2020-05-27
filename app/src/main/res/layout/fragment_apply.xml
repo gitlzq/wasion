@@ -1,296 +1,426 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/sv"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:columnCount="2"
-    android:focusable="true"
-    android:focusableInTouchMode="true"
-    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     tools:ignore="HardcodedText">
 
-    <GridLayout
-        android:layout_width="fill_parent"
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="执行人"
+        android:textSize="12.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/materialTextView"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/zxr"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="梁志乾"
+        app:layout_constraintBottom_toTopOf="@+id/khmc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="客户名称"
+        android:textSize="12.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/materialTextView2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView12" />
+
+    <TextView
+        android:id="@+id/khmc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:hint="请搜索客户添加"
+        android:textSize="12.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/khbh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/zxr" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="客户编号"
+        android:textSize="12.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/materialTextView3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView" />
+
+    <TextView
+        android:id="@+id/khbh"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:hint="客户编号"
+        android:textSize="12.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/khdz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/khmc" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="客户地址"
+        android:textSize="12.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/materialTextView4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView2" />
+
+    <TextView
+        android:id="@+id/khdz"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:hint="客户地址"
+        android:textSize="12.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/lxr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/khbh" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="联系人"
+        android:textSize="12.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/materialTextView5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView3" />
+
+    <TextView
+        android:id="@+id/lxr"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:hint="联系人"
+        android:textSize="12.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/lxrdh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/khdz" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="联系人电话"
+        android:textSize="12.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/materialTextView8"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView4" />
+
+    <TextView
+        android:id="@+id/lxrdh"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:hint="联系人电话"
+        android:textSize="12.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/gscp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/lxr" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="产品"
+        android:textSize="12.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/materialTextView7"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView5" />
+
+    <Spinner
+        android:id="@+id/gscp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="fill"
+        android:background="@null"
+        android:gravity="end"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/cpsl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/lxrdh" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="产品数量"
+        android:textSize="12.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/materialTextView6"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView8" />
+
+    <Spinner
+        android:id="@+id/cpsl"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="fill"
+        android:background="@null"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/bzgs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/gscp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="标准工时"
+        android:textSize="12.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView7" />
+
+    <Spinner
+        android:id="@+id/bzgs"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="fill"
+        android:background="@null"
+        android:gravity="center"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/fwnr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/cpsl" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="99dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="服务内容"
+        app:layout_constraintBottom_toTopOf="@+id/materialTextView9"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView6" />
+
+    <EditText
+        android:id="@+id/fwnr"
+        android:layout_width="0dp"
+        android:layout_height="99dp"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:hint="请输入服务内容"
+        android:inputType="textMultiLine"
+        android:textSize="12.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_selected_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/bzgs"
+        tools:ignore="Autofill" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="出发时间"
+        android:textSize="12.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/materialTextView10"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/tv_selected_time"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@color/selected_time_text"
+        android:textSize="15.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_selected_time1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/fwnr" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="到达时间"
+        android:textSize="12.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/materialTextView11"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView9" />
+
+    <TextView
+        android:id="@+id/tv_selected_time1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@color/selected_time_text"
+        android:textSize="15.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_selected_time2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_selected_time" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="完成时间"
+        android:textSize="12.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView10" />
+
+    <TextView
+        android:id="@+id/tv_selected_time2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@color/selected_time_text"
+        android:textSize="15.0sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_selected_time1" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/post_gd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnSpan="2"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="提交工单申请"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/flush"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnSpan="2"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="接收客户信息"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/exit0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/reset"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnSpan="2"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="重置输入"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/flush"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_gd" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/exit0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnSpan="2"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="退出程序"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flush" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:columnCount="2"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="36dp"
-            android:clickable="false"
-            android:gravity="center"
-            android:text="执行人"
-            android:textSize="12.0sp" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
 
-        <TextView
-            android:id="@+id/zxr"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="fill"
-            android:layout_marginEnd="5dp"
-            android:gravity="center"
-            android:spinnerMode="dropdown"
-            android:text="梁志乾" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="36dp"
-            android:clickable="false"
-            android:text="客户名称"
-            android:textSize="12.0sp" />
-
-        <TextView
-            android:id="@+id/khmc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="fill"
-            android:layout_marginEnd="5dp"
-            android:gravity="center"
-            android:hint="请搜索客户添加"
-            android:textSize="12.0sp" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="36dp"
-            android:clickable="false"
-            android:text="客户编号"
-            android:textSize="12.0sp" />
-
-        <TextView
-            android:id="@+id/khbh"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="fill"
-            android:layout_marginEnd="5dp"
-            android:gravity="center"
-            android:hint="客户编号"
-            android:textSize="12.0sp" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="36dp"
-            android:clickable="false"
-            android:text="客户地址"
-            android:textSize="12.0sp" />
-
-        <TextView
-            android:id="@+id/khdz"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="fill"
-            android:layout_marginEnd="5dp"
-            android:gravity="center"
-            android:hint="客户地址"
-            android:textSize="12.0sp" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="36dp"
-            android:clickable="false"
-            android:text="联系人"
-            android:textSize="12.0sp" />
-
-        <TextView
-            android:id="@+id/lxr"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="fill"
-            android:layout_marginEnd="5dp"
-            android:gravity="center"
-            android:hint="联系人"
-            android:textSize="12.0sp" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="36dp"
-            android:clickable="false"
-            android:text="联系人电话"
-            android:textSize="12.0sp" />
-
-        <TextView
-            android:id="@+id/lxrdh"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="fill"
-            android:layout_marginEnd="5dp"
-            android:gravity="center"
-            android:hint="联系人电话"
-            android:textSize="12.0sp" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="36dp"
-            android:clickable="false"
-            android:text="产品"
-            android:textSize="12.0sp" />
-
-        <Spinner
-            android:id="@+id/gscp"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_gravity="fill"
-            android:layout_marginEnd="5dp"
-            android:background="@null"
-            android:gravity="end"
-            android:spinnerMode="dropdown" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="36dp"
-            android:clickable="false"
-            android:text="产品数量"
-            android:textSize="12.0sp" />
-
-        <Spinner
-            android:id="@+id/cpsl"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_gravity="fill"
-            android:layout_marginEnd="5dp"
-            android:background="@null"
-            android:gravity="center" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="36dp"
-            android:clickable="false"
-            android:text="标准工时"
-            android:textSize="12.0sp" />
-
-        <Spinner
-            android:id="@+id/bzgs"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_gravity="fill"
-            android:layout_marginEnd="5dp"
-            android:background="@null"
-            android:gravity="center"
-            android:spinnerMode="dropdown" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="66dp"
-            android:clickable="false"
-            android:text="服务内容" />
-
-        <EditText
-            android:id="@+id/fwnr"
-            android:layout_width="wrap_content"
-            android:layout_height="66dp"
-            android:layout_gravity="fill"
-            android:layout_marginEnd="5dp"
-            android:gravity="center"
-            android:hint="请输入服务内容"
-            android:inputType="textMultiLine"
-            android:textSize="12.0sp"
-            tools:ignore="Autofill" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="36dp"
-            android:clickable="false"
-            android:text="出发时间"
-            android:textSize="12.0sp" />
-
-        <LinearLayout
-            android:id="@+id/ll_time"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_gravity="fill"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tv_selected_time"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:gravity="center"
-                android:textColor="@color/selected_time_text"
-                android:textSize="15.0sp" />
-        </LinearLayout>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="36dp"
-            android:clickable="false"
-            android:text="到达时间"
-            android:textSize="12.0sp" />
-
-        <LinearLayout
-            android:id="@+id/ll_time1"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_gravity="fill"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tv_selected_time1"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:gravity="center"
-                android:textColor="@color/selected_time_text"
-                android:textSize="15.0sp" />
-        </LinearLayout>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="36dp"
-            android:clickable="false"
-            android:text="完成时间"
-            android:textSize="12.0sp" />
-
-        <LinearLayout
-            android:id="@+id/ll_time2"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_gravity="fill"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tv_selected_time2"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:gravity="center"
-                android:textColor="@color/selected_time_text"
-                android:textSize="15.0sp" />
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/post_gd"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_columnSpan="2"
-            android:text="提交工单申请"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/flush"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_columnSpan="2"
-            android:text="接收客户信息"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/reset"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_columnSpan="2"
-            android:text="重置输入"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/exit0"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_columnSpan="2"
-            android:text="退出程序"
-            android:textStyle="bold" />
-    </GridLayout>
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
